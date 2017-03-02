@@ -1,0 +1,28 @@
+\section{Spécifications et fonctionnalités finales}
+\label{sec:specifications}
+
+\subsection{Backend}
+\paragraph{Peuple}
+Chaque peuple commence avec des attributs principaux bien spécifiques dont découlent des attributs secondaires.
+\subparagraph{Attributs principaux\protect\footnote{Détails des relations entre attributs dans le schéma en dernière page}}
+\begin{itemize}
+\bulletitem Ressources
+\bulletitem Population
+\bulletitem Agressivité
+\bulletitem Education
+\bulletitem Territoire
+\end{itemize}
+\subparagraph{Attributs secondaires}
+\begin{itemize}
+\bulletitem A
+\bulletitem B
+\bulletitem C
+\end{itemize}
+\smallbreak
+Les différents peuples peuvent avoir des relations avec les autres sous deux formes : la guerre et le commerce. Le déclenchement de ces relations ne dépend que des différents attributs secondaires.
+\paragraph{Guerre et commerce}
+Chaque tour, des guerres et des liens commerciaux commencent, ou non, entre les peuples, en fonction de leurs caractéristiques secondaires. Ces relations n'influent que sur les attributs principaux.
+\newline
+La guerre est coûteuse en population pour les deux peuples, mais apporte richesse et territoire au peuple disposant de la plus grande puissance militaire.
+\newline
+Le commerce apporte un bénéfice mutuel aux deux peuples, mais plus un peuple dispose de puissance politique et plus il sera capable de tirer bénéfice d'un commerce avec un autre.
