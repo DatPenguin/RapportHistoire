@@ -1,0 +1,38 @@
+\clearpage
+\section{Interface Utilisateur}
+\label{sec:gui}
+
+\subsection{Fenêtre}
+La fenêtre du programme aura une taille prédéfinie de 1280x720 pixels et n'est pas redimensionnable. Cette dimension a été choisir car elle correspond à une résolution de 16:9 et est à la fois suffisamment petite pour ne pas déborder de la plupart des écrans, et suffisamment grande pour nous permettre d'afficher des éléments suffisamment détaillés.
+\begin{figure}[H]
+	\centering
+		\includegraphics[scale=0.5]{images/window.png}
+	\caption{Fenêtre}
+	\label{fig:window}
+\end{figure}
+
+\subsection{Écoulement du temps}
+Dans la partie basse de l'interface, trois éléments permettent de gérer le passage du temps. À gauche, un bouton permet de mettre en pause ou de reprendre le passage automatique des cycles. Au milieu, un curseur sert à régler la vitesse d'écoulement du temps lors des cycles automatiques. 
+\newline
+Enfin, à droite, un bouton permet de passer au cycle suivant manuellement, même si l'écoulement du temps est en pause.
+
+\subsection{Statistiques centrales}
+Au centre de la fenêtre, des statistiques sont affichées. Par défaut, il s'agira d'un diagramme représentant les pays ainsi que leurs relations. Si un peuple est sélectionné\footnote{Voir plus bas pour la sélection d'un peuple}, les statistiques affichées seront celles du peuple en question, et plus de détails seront fournis sur celui-ci.
+\begin{figure}[H]
+	\centering
+		\includegraphics[scale=0.5]{images/details.png}
+	\caption{Détails}
+	\label{fig:details}
+\end{figure}
+
+\subsection{Sélectionner un peuple}
+Un menu déroulant comportant tous les peuples et un bouton de validation sont à gauche de la fenêtre. Ceux-ci permettent de sélectionner un peuple. En validant, on a accès à ses statistiques détaillées au centre de l'interface.
+\newline
+Il y a également une option \textit{Aucun} permettant de revenir à l'affichage des statistiques globales des relations entre les peuples.
+
+\subsection{Sélectionner un évènement}
+Les évènements peuvent être déclenchés manuellement par l'utilisateur, via un menu déroulant et un bouton de validation. Il est également possible de paramétrer la puissance de l'évènement, ainsi que de désactiver les évènements aléatoires.
+\newline
+Si un peuple est sélectionné, l'évènement le concernera. Sinon, le menu déroulant n'affichera que les évènements d'ampleur globale.
+\subsection{Compte-rendu des évènements}
+À droite de l'interface, une zone de texte liste tous les évènements s'étant produits au cours du dernier cycle.

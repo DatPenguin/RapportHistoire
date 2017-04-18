@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.28)  2 MAR 2017 11:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.28)  18 APR 2017 13:02
 entering extended mode
 **"./Rapport GLP.tex"
 ("Rapport GLP.tex"
@@ -304,26 +304,44 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@lot=\write5
 \openout5 = `"Rapport GLP.lot"'.
 
- [1] (presentation.tex) (specifications.tex) ("Rapport GLP.bbl" [2]) [3] ("Rapport GLP.aux") ) 
+ [1] (presentation.tex) (specifications.tex [2]) (gui.tex [3
+
+] [4]
+<images/window.png, id=28, 960.58875pt x 540.51938pt>
+File: images/window.png Graphic file (type png)
+ <use images/window.png>
+Package pdftex.def Info: images/window.png used on input line 9.
+(pdftex.def)             Requested size: 480.2932pt x 270.25902pt.
+
+<images/details.png, id=30, 960.58875pt x 540.51938pt>
+File: images/details.png Graphic file (type png)
+ <use images/details.png>
+Package pdftex.def Info: images/details.png used on input line 23.
+(pdftex.def)             Requested size: 480.2932pt x 270.25902pt.
+ [5
+
+ <./images/window.png>])
+("Rapport GLP.bbl") [6 <./images/details.png>] ("Rapport GLP.aux") ) 
 Here is how much of TeX's memory you used:
- 3663 strings out of 493333
- 50898 string characters out of 3139165
- 125593 words of memory out of 3000000
- 7110 multiletter control sequences out of 15000+200000
- 14778 words of font info for 34 fonts, out of 3000000 for 9000
+ 3684 strings out of 493333
+ 51202 string characters out of 3139165
+ 126617 words of memory out of 3000000
+ 7124 multiletter control sequences out of 15000+200000
+ 15454 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,5n,30p,327b,439s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Matteo Staiano\
-AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\Matteo Staiano\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\Matteo Staiano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
-appen\ec\dpi600\ecrm0800.pk> <C:\Users\Matteo Staiano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx12
-00.pk> <C:\Users\Matteo Staiano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\Matte
-o Staiano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\Matteo Staiano\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Matteo Staiano\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecbx1440.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Rapport GLP.pdf" (4 pages, 560044 bytes).
+ 42i,7n,30p,491b,439s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Matteo Staiano\AppData\Local\MiKTeX\2.9\f
+onts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk> <C:\Users\Matteo Staiano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
+n\ec\dpi600\ecrm0900.pk> <C:\Users\Matteo Staiano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.p
+k> <C:\Users\Matteo Staiano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\Matteo St
+aiano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Matteo Staiano\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\Matteo Staiano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
+ur\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\Matteo Staiano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecrm1095.pk> <C:\Users\Matteo Staiano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "Rapport GLP.pdf" (7 pages, 2038886 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
+ 338 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

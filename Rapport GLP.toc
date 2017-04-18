@@ -4,9 +4,21 @@
 \contentsline {subsection}{\numberline {1.2}Objet}{2}
 \contentsline {subsection}{\numberline {1.3}Organisation}{2}
 \contentsline {subsection}{\numberline {1.4}Environnements de travail et outils utilis\'es}{2}
-\contentsline {section}{\numberline {2}Sp\'ecifications et fonctionnalit\'es finales}{2}
-\contentsline {subsection}{\numberline {2.1}Backend}{2}
-\contentsline {paragraph}{Peuple}{2}
-\contentsline {subparagraph}{Attributs principaux\footnote {D\'etails des relations entre attributs dans le sch\'ema en derni\`ere page}}{2}
-\contentsline {subparagraph}{Attributs secondaires}{2}
-\contentsline {paragraph}{Guerre et commerce}{2}
+\contentsline {section}{\numberline {2}Sp\'ecifications et fonctionnalit\'es finales}{3}
+\contentsline {subsection}{\numberline {2.1}Backend}{3}
+\contentsline {paragraph}{Peuple}{3}
+\contentsline {subparagraph}{Attributs principaux\footnote {D\'etails des relations entre attributs dans le sch\'ema en derni\`ere page}}{3}
+\contentsline {subparagraph}{Attributs secondaires}{3}
+\contentsline {paragraph}{Guerre et commerce}{3}
+\contentsline {subsection}{\numberline {2.2}\'Ev\`enements}{3}
+\contentsline {paragraph}{Actions locales}{3}
+\contentsline {paragraph}{Actions globales}{3}
+\contentsline {paragraph}{R\'eactions locales}{3}
+\contentsline {subsection}{\numberline {2.3}Immigration}{4}
+\contentsline {section}{\numberline {3}Interface Utilisateur}{5}
+\contentsline {subsection}{\numberline {3.1}Fen\^etre}{5}
+\contentsline {subsection}{\numberline {3.2}\'Ecoulement du temps}{5}
+\contentsline {subsection}{\numberline {3.3}Statistiques centrales}{5}
+\contentsline {subsection}{\numberline {3.4}S\'electionner un peuple}{6}
+\contentsline {subsection}{\numberline {3.5}S\'electionner un \'ev\`enement}{6}
+\contentsline {subsection}{\numberline {3.6}Compte-rendu des \'ev\`enements}{6}

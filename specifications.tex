@@ -1,3 +1,4 @@
+\clearpage
 \section{Spécifications et fonctionnalités finales}
 \label{sec:specifications}
 
@@ -9,14 +10,20 @@ Chaque peuple commence avec des attributs principaux bien spécifiques dont décou
 \bulletitem Ressources
 \bulletitem Population
 \bulletitem Agressivité
-\bulletitem Education
+\bulletitem Éducation
 \bulletitem Territoire
 \end{itemize}
 \subparagraph{Attributs secondaires}
 \begin{itemize}
-\bulletitem A
-\bulletitem B
-\bulletitem C
+\bulletitem Technologie (Éducation, Ressources)
+\bulletitem Richesses (Ressources, Territoire)
+\bulletitem Bellicisme (Agressivité, Richesses)
+\bulletitem Densité de population (Territoire, Population)
+\bulletitem Unités militaires (Agressivité, Population)
+\bulletitem Immigration (Technologie, Richesses)
+\bulletitem Attractivité (Technologie, Richesses)
+\bulletitem Puissance militaire (Unités militaires, Technologie, Richesses)
+\bulletitem Puissance politique (Richesses, Puissance militaire)
 \end{itemize}
 \smallbreak
 Les différents peuples peuvent avoir des relations avec les autres sous deux formes : la guerre et le commerce. Le déclenchement de ces relations ne dépend que des différents attributs secondaires.
@@ -26,3 +33,12 @@ Chaque tour, des guerres et des liens commerciaux commencent, ou non, entre les 
 La guerre est coûteuse en population pour les deux peuples, mais apporte richesse et territoire au peuple disposant de la plus grande puissance militaire.
 \newline
 Le commerce apporte un bénéfice mutuel aux deux peuples, mais plus un peuple dispose de puissance politique et plus il sera capable de tirer bénéfice d'un commerce avec un autre.
+\subsection{Évènements}
+\paragraph{Actions locales}
+Au début de chaque "tout", chaque peuple a une probabilité donnée (permettant un ajustement) de recevoir un évènement aléatoire influant sur ses attributs principaux. L'amplitude de l'évènement est elle aussi aléatoire (faible, moyen, fort) et en influencera les conséquences. Par exemple, l'évènement "Faible" \textit{Crise économique} fera perdre des ressources au peuple impacté.
+\paragraph{Actions globales}
+Chaque "tour", il y a une probabilité qu'un évènement affecte tous les peuples. Celui-ci, en plus d'être aléatoire, pourra dépendre des caractéristiques des peuples. Par exemple, si la moyenne des technologies des peuples est au-dessus de 50, l'évènement \textit{Réchauffement climatique} aura une chance de se produite, impactant ainsi la richesse de tous les peuples.
+\paragraph{Réactions locales}
+Chaque "tour", après la résolution des évènements \textit{action}, chaque peuple aura une probabilité (dépendant des attributs du peuple) de déclencher un évènement \textit{réaction}, qui influera sur ses différents attriuts. Par exemple, si la richesse d'un peuple devient trop faible, l'évènement \textit{Émeutes de la faim} pourra se déclencher, augmentant ainsi l'agressivité et faisant légèrement baisser la population.
+\subsection{Immigration}
+Chaque "tour", les pays perdront ou gagneront de la population, proportionnellement à leur taux d'immigration (un taux positif signifie qu'un pays attire les migrants, tandis qu'une immigration négative poussera les habitants du pays en question à le quitter).

@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
-NormalPos.bottom=530
+NormalPos.right=1562
+NormalPos.bottom=539
 Class=LaTeXView
 Document=Rapport GLP.tex
 
 [Frame0_View0,0]
-TopLine=30
-Cursor=1038
+TopLine=26
+Cursor=1254
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
-NormalPos.bottom=530
+NormalPos.right=1562
+NormalPos.bottom=539
 Class=LaTeXView
-Document=titre.tex
+Document=specifications.tex
 
 [Frame1_View0,0]
-TopLine=0
-Cursor=368
+TopLine=18
+Cursor=10
 
 [Frame2]
 Flags=0
@@ -47,14 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
-NormalPos.bottom=530
+NormalPos.right=1562
+NormalPos.bottom=539
 Class=LaTeXView
-Document=specifications.tex
+Document=gui.tex
 
 [Frame2_View0,0]
-TopLine=0
-Cursor=366
+TopLine=13
+Cursor=1572
 
 [Frame3]
 Flags=0
@@ -65,14 +65,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
-NormalPos.bottom=530
+NormalPos.right=1562
+NormalPos.bottom=539
 Class=LaTeXView
-Document=presentation.tex
+Document=macro.sty
 
 [Frame3_View0,0]
-TopLine=3
-Cursor=510
+TopLine=0
+Cursor=393
 
 [SessionInfo]
 FrameCount=4
