@@ -1,0 +1,175 @@
+\clearpage
+\section{Backend}
+\label{sec:backend}
+
+En ce qui concerne la partie backend, c'est à dire le moteur du programme, l'objectif à été de réaliser des structures de données adaptées aux besoins du projet en gardant une séparation entre les classes de données et les classes qui réalisent des opérations, qui seront généralement appelées "Gestionnaire" ou "Manager".
+\newline
+Il a aussi été crucial de pouvoir réaliser toutes les fonctionnalités demandées indépendamment de la partie graphique.
+\newline
+Le fonctionnement du projet se basera sur un système de tours, durant lesquels auront lieu les différents évènements et interactions entre peuples.
+
+\subsection{Données}
+\subsubsection{Peuple}
+La classe de données \textit{Peuple} est celle qui sera le plus souvent utilisée. Elle contient les différents attributs de chaque peuple.
+\newline
+Chaque peuple commence avec des attributs principaux bien spécifiques dont découlent des attributs secondaires. Le calcul de ceux-ci est détaillé ci-dessous.
+
+\paragraph{Attributs principaux}
+\begin{itemize}
+\bulletitem{Ressources}
+\bulletitem{Population}
+\bulletitem{Agressivité}
+\bulletitem{Éducation}
+\bulletitem{Territoire}
+\end{itemize}
+
+\paragraph{Attributs secondaires}
+\begin{itemize}
+\bulletitem{Technologie} = (Ressources + Éducation) / 2
+\bulletitem{Densité} = Territoire - Population
+\bulletitem{Richesse} = (Ressources + Territoire) / 2
+\bulletitem{Nombre de soldats} = (Population + Agressivité) / 2
+\bulletitem{Bellicisme} = ($\ln$(Population + 1) / 4) * ((Richesse + Agressivité) / 2)
+\bulletitem{Attractivité} = (Richesse + Technologie) / 2
+\bulletitem{Puissance militaire} = (Technologie + Nombre de soldats) / 2
+\bulletitem{Puissance politique} = (Puissance militaire + Richesse) / 2
+\bulletitem{Immigration} = (Densité + Richesse) / 10
+\end{itemize}
+
+\paragraph{Formules développées}
+Les formules ci-dessous sont les mêmes que celles du paragraphe précédent, mais elles ne contiennent ici que des attributs principaux.
+\subparagraph{Puissance militaire : }
+(Ressources + Education + Population + Agressivité) /4 .
+\newline
+Puissance militaire $\in$  [0 ; 100] (valeur max choisie avec toutes les ressources à 100).
+\subparagraph{Densité : }
+La densité de population ne correspond pas à un calcul normal de densité, ce qui explique qu'il est possible d'obtenir des valeurs négatives. Nous avons opté pour ce choix afin de simplifier les calculs liés à l'immigration.
+\subparagraph{Immigration : }
+(3 * Territoire - (2 * Peuple) + Ressources) / 20 .
+\newline
+Immigration $\in$ [-10 ; 35] (valeur max choisie avec Territoire de 100 et des Ressources de 400, ce qui est cohérent avec les valeurs obtenues lors des simulations). Lorsque toutes les valeurs sont moyennes, l'immigration est à 5.
+\subparagraph{Bellicisme : }
+($\ln$(Population + 1) * (Ressources + Territoire + (2 * Agressivité))) / 16 .
+\newline
+Bellicisme $\in$ [0 ; 202] (valeur max choisie avec un Territoire de 100, des ressources de 400 et une agressivité de 100, ce qui est cohérent avec les valeurs obtenues lors des simulations. Lorsque toutes les valeurs sont moyennes, le bellicisme est de 50.
+\begin{figure}[H]
+	\centering
+		\includegraphics[scale=0.75]{images/bellicisme.png}
+	\caption{Évolution du bellicisme en fonction de la population}
+	\label{fig:bellicisme}
+\end{figure}
+
+Nous avons choisi d'utiliser une fonction logarithmique pour éviter que les pays ne se fassent la guerre systématiquement lorsque leur population devient trop basse, évitant ainsi de faire durer les guerres éternellement.
+
+\subsubsection{Évènements}
+\paragraph{Actions locales}
+Au début de chaque "tour\footnote{Voir chapitre sur la Running Loop}", chaque peuple a une probabilité donnée (permettant un ajustement) de recevoir un événement aléatoire influant sur ses attributs principaux. L'amplitude de l'événement est elle aussi aléatoire (faible, moyen, fort) et en influencera les conséquences. Par exemple l'événement "Faible" Crise Économique fera perdre des ressources au peuple impacté.
+\paragraph{Actions globales}
+Chaque "tour" il y a une probabilité qu'un événement affecte tous les peuples. Celui-ci agira sur l'attribut principal donné de tous les peuples, par exemple l'événement Séisme diminuera la population de chaque peuple d'une valeur comprise entre 1 et 3.
+\paragraph{Réactions locales}
+Chaque "tour", après la résolution des actions, chaque peuple aura une probabilité (dépendant des attributs du peuple) de déclencher un événement réaction, qui influera sur ses différents attributs. Par exemple, si la richesse d'un peuple passe au dessus d'un certain seuil (ici 50), l'événement Amélioration de l'éducation" pourra se déclencher, augmentant ainsi l'éducation du peuple.
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[scale=0.5]{images/eventUML.png}
+	\caption{Diagramme UML des différents évènements}
+	\label{fig:events}
+\end{figure}
+
+\subsection{Classes fonctionnelles}
+\subsubsection{Guerre et commerce}
+Chaque tour, des guerres et des liens commerciaux commencent, ou non, entre les peuples, en fonction de leurs caractéristiques secondaires. Ces relations n'influent que sur les attributs principaux.
+\newline
+La guerre est coûteuse en population et en richesses pour les deux peuples. Le commerce apporte un bénéfice mutuel, mais plus un peuple dispose de puissance politique et plus il sera capable de tirer bénéfice de ses liens commerciaux.
+\newline
+\newline
+On étudiera chaque binôme de pays potentiel pour identifier lesquels ont les valeurs d'attributs nécessaires pour entrer en guerre.
+\newline
+Un couple de peuple est "éligible" à entrer en guerre si la somme de leurs bellicismes est supérieure ou égale à un seuil fixé (ici 150).
+\newline
+Pour le commerce, il s'agit de la somme de leur attractivité qui sera prise en compte, on étudiera comme ci dessous pour éviter tout doublon.
+\newline
+\newline
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+& Peuple 1 & Peuple 2 & Peuple 3 \\
+\hline
+Peuple 1 & X & Guerre / Commerce & Guerre / Commerce \\
+\hline
+Peuple 2 & X & X & Guerre / Commerce \\
+\hline
+Peuple 3 & X & X & X \\
+\hline
+\end{tabular}
+\end{center}
+
+Les conséquences de la guerre sont ensuite résolues, la population de chaque pays en guerre est diminuée de la puissance militaire de leur adversaire multipliée par un coefficient de réduction, ici 0.01.
+\newline
+La guerre est traitée avant le commerce, car dans notre système deux pays en guerre ne peuvent pas commercer entre eux.
+
+\subsubsection{Immigration et croissance}
+Chaque "tour", les pays perdront ou gagneront de la population, proportionnellement à leur taux d'immigration (un taux positif signifie qu'un pays attire les migrants, tandis qu'une immigration négative poussera les habitants du pays en question à le quitter).
+\newline
+\newline
+Une amélioration possible serait une approche plus réaliste en réalisant un "pool" de population constitué de toutes les populations quittant leurs pays de départ. Cette masse de population serait répartie en fonction du taux d'immigration positive de chaque pays et, s'il y  a des "excédents" par rapport à la demande, ceux-ci seraient attribués par rapport au pays de départ.
+\newline
+La croissance est une augmentation fixe de la population de chaque pays à chaque tour, ici la croissance sera de 1 par tour.
+\newline
+\newline
+L'immigration est gérée dynamiquement en fonction des besoins de chaque pays. Un pays ayant une une densité de population négative\footnote{Se référer au calcul de la densité.} verra sa population en trop "quitter" le pays et être affectée à une "pool" de population qui sera répartie sur les pays en demande de population, l'ordre de répartition étant aléatoire et changeant à chaque tour pour éviter que les premiers pays de la liste ne s'accaparent tous les flux migratoires.
+
+\subsubsection{RunningLoop}
+La Running loop, ou boucle de fonctionnement est l'épine dorsale de la partie backend. Elle va gérer l'ordre dans lequel seront effectués les différents calculs liés au guerres, commerces et événements, selon le schéma ci-dessous.
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[scale=0.5]{images/RunningLoop.png}
+	\caption{Schéma de fonctionnement de la RunningLoop}
+	\label{fig:runningloop}
+\end{figure}
+
+Étant l'une des classes principales de la partie calcul et n'étant instanciée qu'une seule fois, c'est elle qui contiendra les différents éléments statiques :
+\begin{itemize}
+\bulletitem{Logs de débugage}
+\bulletitem{Logs à afficher à l'utilisateur}
+\bulletitem{Nombre de cycles écoulés}
+\bulletitem{Liste d'évènements entrés manuellement}
+\end{itemize}
+Cette classe implémente aussi les différentes méthodes pour ajouter du texte aux différents logs.
+\begin{figure}[H]
+	\centering
+		\includegraphics[scale=0.5]{images/RunningLoopUML.png}
+	\caption{UML de la RunningLoop}
+	\label{fig:runningloopuml}
+\end{figure}
+
+\subsubsection{Gestionnaire d'évènements}
+Il existe un gestionnaire pour chaque type d'évènement (local, global, réaction). Ceux-ci instancient chacun une liste contenant tous les différents éléments.
+\newline
+C'est dans ces classes que sont implémentées les différentes méthodes d'action des évènements, tandis que les probabilités d'apparition des évènements sont gérées par la classe EventChanceManager. L'objectif était ici d'encapsuler chaque élément de manière à rendre le programme le plus clair possible.
+\begin{figure}[H]
+	\centering
+		\includegraphics[scale=0.5]{images/managerUML.png}
+	\caption{UML des différents gestionnaires}
+	\label{fig:manageruml}
+\end{figure}
+
+\subsection{Systèmes de logs et de débogage}
+\subsubsection{Log4J}
+Durant les premières phases du développement, nous avons été confrontés à plusieurs problèmes de débogage et d'équilibrage dans les mécaniques mises en place.
+\newline
+Plutôt d'utiliser, comme nous le faisions précédemment, de simples envois de chaînes de caractères sur le flux d'erreur standard, nous avons choisi de mettre en place et d'utiliser la librairie Log4J pour obtenir un système de logs plus complet.
+\newline
+Cela nous a permis de mettre en forme les différentes données renvoyées par le programme, de les hiérarchiser et de pouvoir comprendre quand et comment certaines fonctionnalités pouvaient poser problème. Par exemple, ce système nous a permis de résoudre un bug faisant augmenter de manière exponentielle les ressources des différents pays à partir d'un certain nombre de cycles.
+\begin{figure}[H]
+	\centering
+		\includegraphics[scale=0.33]{images/logshtml.png}
+	\caption{Aperçu des logs obtenus grâce à Log4J en HTML}
+	\label{fig:logshtml}
+\end{figure}
+
+\subsubsection{JUnit}
+Dans la même optique que précédemment et pour aller un peu plus loin en automatisant les tests sur certaines des fonctions de notre moteur, nous avons choisi d'utiliser le framework JUnit.
+\newline
+Celui-ci nous a notamment été utile pour tester les différentes évolutions des peuples au fil des tours, sur de très grandes itérations.
