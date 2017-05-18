@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.18)  18 MAY 2017 23:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.18)  19 MAY 2017 00:14
 entering extended mode
 **"./Rapport GLP.tex"
 ("Rapport GLP.tex"
@@ -308,21 +308,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@lof=\write4
 \openout4 = `"Rapport GLP.lof"'.
 
- [1] [2]
-(presentation.tex) (backend.tex [3] <images/bellicisme.png, id=23, 383.93437pt x 181.42781pt>
+ [1]
+(presentation.tex) (backend.tex [2] <images/bellicisme.png, id=20, 383.93437pt x 181.42781pt>
 File: images/bellicisme.png Graphic file (type png)
 
 <use images/bellicisme.png>
 Package pdftex.def Info: images/bellicisme.png used on input line 57.
 (pdftex.def)             Requested size: 287.95006pt x 136.07053pt.
- [4
+ [3
 
-] <images/eventUML.png, id=30, 690.58pt x 710.655pt>
+] <images/eventUML.png, id=27, 690.58pt x 710.655pt>
 File: images/eventUML.png Graphic file (type png)
  <use images/eventUML.png>
 Package pdftex.def Info: images/eventUML.png used on input line 74.
 (pdftex.def)             Requested size: 345.28915pt x 355.32663pt.
- [5 <./images/bellicisme.png>]
+ [4 <./images/bellicisme.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 81--93
 
  []
@@ -337,7 +337,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--93
 
  []
 
-[6 <./images/eventUML.png>]
+[5 <./images/eventUML.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 112--121
 
  []
@@ -347,113 +347,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--121
 
  []
 
-<images/RunningLoop.png, id=42, 312.16624pt x 558.085pt>
+<images/RunningLoop.png, id=38, 312.16624pt x 558.085pt>
 File: images/RunningLoop.png Graphic file (type png)
  <use images/RunningLoop.png>
 Package pdftex.def Info: images/RunningLoop.png used on input line 127.
 (pdftex.def)             Requested size: 156.08273pt x 279.04182pt.
- [7 <./images/RunningLoop.png>]
-<images/RunningLoopUML.png, id=47, 708.6475pt x 946.53625pt>
+ [6 <./images/RunningLoop.png>]
+<images/RunningLoopUML.png, id=44, 708.6475pt x 946.53625pt>
 File: images/RunningLoopUML.png Graphic file (type png)
  <use images/RunningLoopUML.png>
 Package pdftex.def Info: images/RunningLoopUML.png used on input line 142.
 (pdftex.def)             Requested size: 354.32289pt x 473.26697pt.
 
-<images/managerUML.png, id=48, 673.51625pt x 672.5125pt>
+<images/managerUML.png, id=45, 673.51625pt x 672.5125pt>
 File: images/managerUML.png Graphic file (type png)
  <use images/managerUML.png>
 Package pdftex.def Info: images/managerUML.png used on input line 153.
 (pdftex.def)             Requested size: 336.7573pt x 336.25542pt.
- [8 <./images/RunningLoopUML.png>]
-<images/logshtml.png, id=53, 1428.83812pt x 707.64375pt>
-File: images/logshtml.png Graphic file (type png)
- <use images/logshtml.png>
-Package pdftex.def Info: images/logshtml.png used on input line 167.
-(pdftex.def)             Requested size: 471.51804pt x 233.52316pt.
- [9 <./images/managerUML.png>])
-(gui.tex [10 <./images/logshtml.png>] <images/window.png, id=62, 960.58875pt x 540.51938pt>
+ [7 <./images/RunningLoopUML.png>])
+(gui.tex [8 <./images/managerUML.png>] <images/window.png, id=54, 960.58875pt x 540.51938pt>
 File: images/window.png Graphic file (type png)
  <use images/window.png>
 Package pdftex.def Info: images/window.png used on input line 9.
 (pdftex.def)             Requested size: 480.2932pt x 270.25902pt.
 
-<images/chosingframe1.png, id=63, 242.40562pt x 100.12407pt>
+<images/chosingframe1.png, id=55, 242.40562pt x 100.12407pt>
 File: images/chosingframe1.png Graphic file (type png)
  <use images/chosingframe1.png>
 Package pdftex.def Info: images/chosingframe1.png used on input line 19.
 (pdftex.def)             Requested size: 121.2025pt x 50.0619pt.
 
-<images/chosingframe2.png, id=64, 242.40562pt x 176.15813pt>
+<images/chosingframe2.png, id=56, 242.40562pt x 176.15813pt>
 File: images/chosingframe2.png Graphic file (type png)
  <use images/chosingframe2.png>
 Package pdftex.def Info: images/chosingframe2.png used on input line 25.
 (pdftex.def)             Requested size: 121.2025pt x 88.07884pt.
 
-<images/temps.png, id=65, 909.3975pt x 71.51718pt>
+<images/temps.png, id=57, 909.3975pt x 71.51718pt>
 File: images/temps.png Graphic file (type png)
  <use images/temps.png>
 Package pdftex.def Info: images/temps.png used on input line 36.
 (pdftex.def)             Requested size: 454.69765pt x 35.7585pt.
- [11
+ [9
 
- <./images/window.png> <./images/chosingframe1.png> <./images/chosingframe2.png>] <images/details.png, id=72, 960.58875p
+ <./images/window.png> <./images/chosingframe1.png> <./images/chosingframe2.png>] <images/details.png, id=64, 960.58875p
 t x 540.51938pt>
 File: images/details.png Graphic file (type png)
  <use images/details.png>
 Package pdftex.def Info: images/details.png used on input line 49.
 (pdftex.def)             Requested size: 480.2932pt x 270.25902pt.
 
-<images/graphique.png, id=73, 237.13594pt x 244.66406pt>
+<images/graphique.png, id=65, 237.13594pt x 244.66406pt>
 File: images/graphique.png Graphic file (type png)
  <use images/graphique.png>
 Package pdftex.def Info: images/graphique.png used on input line 60.
 (pdftex.def)             Requested size: 237.13535pt x 244.66345pt.
 
-<images/graphique2.png, id=74, 234.1247pt x 234.1247pt>
+<images/graphique2.png, id=66, 234.1247pt x 234.1247pt>
 File: images/graphique2.png Graphic file (type png)
  <use images/graphique2.png>
 Package pdftex.def Info: images/graphique2.png used on input line 66.
 (pdftex.def)             Requested size: 234.12411pt x 234.12411pt.
- [12 <./images/temps.png> <./images/details.png>] <images/selpeuple.png, id=81, 1280.785pt x 720.6925pt>
+ [10 <./images/temps.png> <./images/details.png>] <images/selpeuple.png, id=72, 1280.785pt x 720.6925pt>
 File: images/selpeuple.png Graphic file (type png)
  <use images/selpeuple.png>
 Package pdftex.def Info: images/selpeuple.png used on input line 77.
 (pdftex.def)             Requested size: 480.2932pt x 270.25902pt.
- [13 <./images/graphique.png> <./images/graphique2.png>] <images/selevent.png, id=87, 1280.785pt x 720.6925pt>
+ [11 <./images/graphique.png> <./images/graphique2.png>] <images/selevent.png, id=78, 1280.785pt x 720.6925pt>
 File: images/selevent.png Graphic file (type png)
  <use images/selevent.png>
 Package pdftex.def Info: images/selevent.png used on input line 88.
 (pdftex.def)             Requested size: 480.2932pt x 270.25902pt.
- [14 <./images/selpeuple.png (PNG copy)> <./images/selevent.png (PNG copy)>] <images/logs.png, id=91, 234.8775pt x 161.8
+ [12 <./images/selpeuple.png (PNG copy)> <./images/selevent.png (PNG copy)>] <images/logs.png, id=83, 234.8775pt x 161.8
 5469pt>
 File: images/logs.png Graphic file (type png)
 
 <use images/logs.png>
 Package pdftex.def Info: images/logs.png used on input line 104.
 (pdftex.def)             Requested size: 234.87692pt x 161.85428pt.
- <images/themes.png, id=92, 1280.785pt x 720.6925pt>
+ <images/themes.png, id=84, 1280.785pt x 720.6925pt>
 File: images/themes.png Graphic file (type png)
  <use images/themes.png>
 Package pdftex.def Info: images/themes.png used on input line 116.
 (pdftex.def)             Requested size: 480.2932pt x 270.25902pt.
- [15 <./images/logs.png>] <images/icon.png, id=97, 128.48pt x 128.48pt>
+ [13 <./images/logs.png>] <images/icon.png, id=89, 128.48pt x 128.48pt>
 File: images/icon.png Graphic file (type png)
  <use images/icon.png>
 Package pdftex.def Info: images/icon.png used on input line 128.
 (pdftex.def)             Requested size: 128.47968pt x 128.47968pt.
-) (conclusion.tex [16 <./images/themes.png (PNG copy)> <./images/icon.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 5--44
+) (conclusion.tex [14 <./images/themes.png (PNG copy)> <./images/icon.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 5--41
 
  []
 
-[17
+[15
 
 ] ("Rapport GLP.aux") ) 
 Here is how much of TeX's memory you used:
- 3779 strings out of 493328
- 53830 string characters out of 3136538
- 130326 words of memory out of 3000000
- 7210 multiletter control sequences out of 15000+200000
+ 3773 strings out of 493328
+ 53709 string characters out of 3136538
+ 129312 words of memory out of 3000000
+ 7205 multiletter control sequences out of 15000+200000
  15454 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,7n,30p,537b,439s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -466,9 +460,9 @@ onts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\matte\AppData\Local\MiK
 00\ecrm1095.pk> <C:\Users\matte\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb>
-Output written on "Rapport GLP.pdf" (18 pages, 4217377 bytes).
+Output written on "Rapport GLP.pdf" (16 pages, 4123872 bytes).
 PDF statistics:
- 417 PDF objects out of 1000 (max. 8388607)
+ 410 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

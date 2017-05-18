@@ -162,12 +162,6 @@ Durant les premières phases du développement, nous avons été confrontés à plusie
 Plutôt d'utiliser, comme nous le faisions précédemment, de simples envois de chaînes de caractères sur le flux d'erreur standard, nous avons choisi de mettre en place et d'utiliser la librairie Log4J pour obtenir un système de logs plus complet.
 \newline
 Cela nous a permis de mettre en forme les différentes données renvoyées par le programme, de les hiérarchiser et de pouvoir comprendre quand et comment certaines fonctionnalités pouvaient poser problème. Par exemple, ce système nous a permis de résoudre un bug faisant augmenter de manière exponentielle les ressources des différents pays à partir d'un certain nombre de cycles.
-\begin{figure}[H]
-	\centering
-		\includegraphics[scale=0.33]{images/logshtml.png}
-	\caption{Aperçu des logs obtenus grâce à Log4J en HTML}
-	\label{fig:logshtml}
-\end{figure}
 
 \subsubsection{JUnit}
 Dans la même optique que précédemment et pour aller un peu plus loin en automatisant les tests sur certaines des fonctions de notre moteur, nous avons choisi d'utiliser le framework JUnit.

@@ -1,19 +1,18 @@
 \select@language {french}
-\contentsline {figure}{\numberline {1}{\ignorespaces \'Evolution du bellicisme en fonction de la population}}{5}
-\contentsline {figure}{\numberline {2}{\ignorespaces Diagramme UML des diff\'erents \'ev\`enements}}{6}
-\contentsline {figure}{\numberline {3}{\ignorespaces Sch\'ema de fonctionnement de la RunningLoop}}{7}
-\contentsline {figure}{\numberline {4}{\ignorespaces UML de la RunningLoop}}{8}
-\contentsline {figure}{\numberline {5}{\ignorespaces UML des diff\'erents gestionnaires}}{9}
-\contentsline {figure}{\numberline {6}{\ignorespaces Aper\c cu des logs obtenus gr\^ace \`a Log4J en HTML}}{10}
-\contentsline {figure}{\numberline {7}{\ignorespaces Fen\^etre}}{11}
-\contentsline {figure}{\numberline {8}{\ignorespaces ChosingFrame (1re \'etape)}}{11}
-\contentsline {figure}{\numberline {9}{\ignorespaces ChosingFrame (2e \'etape)}}{11}
-\contentsline {figure}{\numberline {10}{\ignorespaces Contr\^ole du temps}}{12}
-\contentsline {figure}{\numberline {11}{\ignorespaces D\'etails}}{12}
-\contentsline {figure}{\numberline {12}{\ignorespaces Graphique (vue d\'etaill\'ee)}}{13}
-\contentsline {figure}{\numberline {13}{\ignorespaces Graphique (vue globale)}}{13}
-\contentsline {figure}{\numberline {14}{\ignorespaces S\'election du peuple}}{14}
-\contentsline {figure}{\numberline {15}{\ignorespaces S\'election des \'ev\`enements}}{14}
-\contentsline {figure}{\numberline {16}{\ignorespaces L'affichage des logs}}{15}
-\contentsline {figure}{\numberline {17}{\ignorespaces Diff\'erences entre deux th\`emes}}{16}
-\contentsline {figure}{\numberline {18}{\ignorespaces L'ic\^one du programme}}{16}
+\contentsline {figure}{\numberline {1}{\ignorespaces \'Evolution du bellicisme en fonction de la population}}{4}
+\contentsline {figure}{\numberline {2}{\ignorespaces Diagramme UML des diff\'erents \'ev\`enements}}{5}
+\contentsline {figure}{\numberline {3}{\ignorespaces Sch\'ema de fonctionnement de la RunningLoop}}{6}
+\contentsline {figure}{\numberline {4}{\ignorespaces UML de la RunningLoop}}{7}
+\contentsline {figure}{\numberline {5}{\ignorespaces UML des diff\'erents gestionnaires}}{8}
+\contentsline {figure}{\numberline {6}{\ignorespaces Fen\^etre}}{9}
+\contentsline {figure}{\numberline {7}{\ignorespaces ChosingFrame (1re \'etape)}}{9}
+\contentsline {figure}{\numberline {8}{\ignorespaces ChosingFrame (2e \'etape)}}{9}
+\contentsline {figure}{\numberline {9}{\ignorespaces Contr\^ole du temps}}{10}
+\contentsline {figure}{\numberline {10}{\ignorespaces D\'etails}}{10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Graphique (vue d\'etaill\'ee)}}{11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Graphique (vue globale)}}{11}
+\contentsline {figure}{\numberline {13}{\ignorespaces S\'election du peuple}}{12}
+\contentsline {figure}{\numberline {14}{\ignorespaces S\'election des \'ev\`enements}}{12}
+\contentsline {figure}{\numberline {15}{\ignorespaces L'affichage des logs}}{13}
+\contentsline {figure}{\numberline {16}{\ignorespaces Diff\'erences entre deux th\`emes}}{14}
+\contentsline {figure}{\numberline {17}{\ignorespaces L'ic\^one du programme}}{14}
